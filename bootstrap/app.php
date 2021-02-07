@@ -99,6 +99,11 @@ $app->register(App\Providers\AuthServiceProvider::class);
 // JWT AUTH
 $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
 
+// Mail
+$app->register(Illuminate\Mail\MailServiceProvider::class);
+
+$app->configure("mail");
+
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes

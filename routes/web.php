@@ -21,6 +21,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+
 $router->group(['prefix' => 'api','middleware' => 'CorsMiddleware'], function() use($router){
 
     $router->post('testapi','ChatController@testapi');
@@ -33,6 +34,9 @@ $router->group(['prefix' => 'api','middleware' => 'CorsMiddleware'], function() 
     $router->get('updateuser/{id}','UserController@updateUser');
     $router->get('updateuserclose/{id}','UserController@upUserClose');
     $router->post('update_profil','UserController@update');
+    $router->post('verify_user','UserController@verifiyUser');
+    $router->post('cekusertoreset','UserController@sendEmailToResetPass');
+    $router->post('reset_password','UserController@resetPassword');
 
     // Home
     $router->get('home','HomeController@index');

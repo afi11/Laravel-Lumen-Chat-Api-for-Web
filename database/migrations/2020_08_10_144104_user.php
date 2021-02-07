@@ -20,6 +20,7 @@ class User extends Migration
             $table->string('email',191)->unique();
             $table->string('photo')->nullable();
             $table->timestamp('login_at')->nullable();
+            $table->timestamp('verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

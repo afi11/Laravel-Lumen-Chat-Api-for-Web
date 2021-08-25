@@ -209,7 +209,7 @@
                         <td>
                           <p class="sub">Jika anda mengalamai masalah menekan tombol verifikasi diatas, salin tautan verifikasi dibawah ini ke aplikasi web browser.
                           </p>
-                          <p class="sub"><a href="http://47.254.245.168:82/verify_account?mail={{ $email }}">http://47.254.245.168:82/verify_account?mail={{ $email }}</a></p>
+                          <p class="sub"><a href="http://localhost:3000/verify_account?mail={{ $email }}">http://47.254.245.168:82/verify_account?mail={{ $email }}</a></p>
                         </td>
                       </tr>
                     </table>

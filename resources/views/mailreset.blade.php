@@ -209,7 +209,7 @@
                         <td>
                           <p class="sub">Jika anda mengalamai masalah menekan tombol reset diatas, salin tautan reset password dibawah ini ke aplikasi web browser.
                           </p>
-                          <p class="sub"><a href="http://47.254.245.168:82/renew_password?mail={{ $user->email }}">http://47.254.245.168:82/renew_password?mail={{ $user->email }}</a></p>
+                          <p class="sub"><a href="http://localhost:3000/renew_password?mail={{ $user->email }}">http://47.254.245.168:82/renew_password?mail={{ $user->email }}</a></p>
                         </td>
                       </tr>
                     </table>
